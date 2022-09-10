@@ -38,13 +38,14 @@ public class Basics {
          *
          *    (Relevant reading: 1.1.3. Printing things)
          */
-        System.out.println("Hello World!");
+        System.out.println(7 + 5);
 
         /* TODO (Task 1): Write a line of code below that prints the string
          *                Hello World!
+         *
          */
 
-
+        System.out.println("Hello World!");
 
         /* 4. In Python, we could declare variables using a simple assignment
          *    statement. For example:
@@ -100,8 +101,8 @@ public class Basics {
          * Current count: 0
          */
 
-        for (int i = 10; i > -1; i--){
-            System.out.println("Current count: " + i);
+        for (int i = 10; i < -1; i ++){
+            System.out.println(i);
         }
 
     }
@@ -149,7 +150,6 @@ public class Basics {
         for (String word : words){
             ret.append(word.charAt(0));
         }
-
         // Fill in the rest of the body here
 
         return ret.toString();
@@ -172,16 +172,16 @@ public class Basics {
     public static int oddSum(int[] arr) {
         int current_sum = 0;
 
-        for (int i = 1; i < arr.length; i += 2){
-            current_sum += arr[i];
-        }
-
         /* TODO (Task 5): Complete this method body using a for-loop.
          *                You can find the length of an array by using the
          *                .length attribute (e.g. arr.length)
          *                You can index into arrays as we do in Python
          *                (e.g. arr[i] gives you the item at index i).
          */
+
+        for (int i = 1; i < arr.length; i += 2){
+            current_sum += arr[i];
+        }
 
         return current_sum;
     }
